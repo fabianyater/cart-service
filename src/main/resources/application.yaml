@@ -1,5 +1,5 @@
 server:
-  port: 8080
+  port: 8085
 
 spring:
   profiles:
@@ -16,3 +16,11 @@ spring:
     url: jdbc:postgresql://localhost:5432/cart
     username: postgres
     password: postgres
+
+stock:
+  service:
+    url: http://localhost:8080/
+
+supply:
+  service:
+    url: http://localhost:8082/
